@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Temperature {
+        constructor(normalTem) {
+           this.degree = normalTem;
+        }
+        convertTem(){
+            return this.degree * 9/5 + 32;
+        }
+        convertKelvin(){
+            return this.degree + 273.15;
+        }
+    }
+    let tem = new Temperature(25);
+    document.write("Nhiệt độ C tương ứng là :" + tem.convertTem() + "<br>" );
+    document.write("Nhiệt độ Kelvin tương ứng là :" + tem.convertKelvin());
+</script>
+</html>
